@@ -1,70 +1,48 @@
-<link rel="stylesheet" href="/styles.css" />
 /* styles.css */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f7f6;
-  color: #2e3d2f;
   margin: 0;
-  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 
 h1 {
-  margin-top: 40px;
   font-size: 2.5rem;
-  color: #7a9e7a; /* sage green */
+  margin-bottom: 0.5rem;
 }
 
 p {
-  font-size: 1.25rem;
-  margin: 20px 0;
-  color: #4a5d4a;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-form {
-  margin-bottom: 30px;
+.buttons {
+  display: flex;
+  gap: 1rem;
 }
 
-input[type="file"] {
-  margin-right: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #7a9e7a;
-}
-
-button {
-  background-color: #7a9e7a;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #5d7a5d;
-}
-
-a {
-  margin: 0 10px;
-  color: #7a9e7a;
+.buttons a {
   text-decoration: none;
-  font-weight: 600;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-#confirmation {
-  margin-top: 20px;
+  background-color: #9caf88; /* Sage green */
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
   font-weight: bold;
-  color: #4a7a4a;
+  transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #7a8c6a; /* Darker sage green */
 }
 
